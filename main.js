@@ -1,5 +1,12 @@
 
 const counters = document.querySelectorAll(".metric-value");
+const buildCvBtn = document.querySelector("#buildCvBtn");
+
+if (buildCvBtn) {
+	buildCvBtn.addEventListener("click", () => {
+		window.location.href = "templates.html";
+	});
+}
 
 const runCounter = (el) => {
 	const target = Number(el.dataset.target || 0);
