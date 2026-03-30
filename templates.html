@@ -37,175 +37,195 @@
 			</header>
 
 			<main class="templates-main">
-				<section class="templates-header">
-					<div>
-						<h1>Choose from 12 sample CV templates</h1>
-						<p>
-							Pick any layout style and start editing right away. Every template is
-							ATS-ready and optimized for modern hiring screens.
-						</p>
+				<section class="templates-steps" aria-label="Resume setup steps">
+					<div class="step-pill active">
+						<span class="step-index">1</span>
+						<span>Choose template</span>
 					</div>
-					<span class="template-chip">12 Templates</span>
+					<div class="step-pill">
+						<span class="step-index">2</span>
+						<span>Enter your details</span>
+					</div>
+					<div class="step-pill">
+						<span class="step-index">3</span>
+						<span>Download resume</span>
+					</div>
 				</section>
 
-				<section class="templates-grid">
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
+				<section class="templates-header templates-header-centered">
+					<p class="templates-overline">Resume templates</p>
+					<h1>Resume templates</h1>
+					<p>
+						Simple to use and ready in minutes. Browse category styles and pick your
+						favorite design.
+					</p>
+				</section>
+
+				<section class="templates-filter-row" aria-label="Template categories">
+					<button class="filter-chip is-active" data-filter="all">All templates</button>
+					<button class="filter-chip" data-filter="simple">Simple</button>
+					<button class="filter-chip" data-filter="modern">Modern</button>
+					<button class="filter-chip" data-filter="twocol">2 columns</button>
+					<button class="filter-chip" data-filter="photo">With photo</button>
+					<button class="filter-chip" data-filter="professional">Professional</button>
+					<button class="filter-chip" data-filter="ats">ATS</button>
+				</section>
+
+				<section class="templates-market-grid">
+					<article class="template-market-card" data-tags="simple ats professional">
+						<div class="template-sheet variant-a">
+							<div class="sheet-col left"></div>
+							<div class="sheet-col right"></div>
 						</div>
-						<div class="template-meta">
-							<h3>Modern Edge</h3>
-							<p>Strong typography with a clean side column.</p>
+						<div class="template-card-footer">
+							<h3>Celestial</h3>
+							<p>Simple format with clear hierarchy and ATS readability.</p>
+							<div class="dot-palette">
+								<span style="--dot:#39434b"></span><span style="--dot:#6c7f90"></span><span style="--dot:#8ecfd6"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Executive Slate</h3>
-							<p>Minimal blocks suited for management roles.</p>
+					<article class="template-market-card" data-tags="simple ats">
+						<div class="template-sheet variant-b"></div>
+						<div class="template-card-footer">
+							<h3>Galaxy</h3>
+							<p>A strictly aligned layout for recruiters and ATS scans.</p>
+							<div class="dot-palette">
+								<span style="--dot:#d7dce2"></span><span style="--dot:#bac5cf"></span><span style="--dot:#f0d5a6"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line short"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Creative Pulse</h3>
-							<p>A polished layout with emphasis on portfolio work.</p>
+					<article class="template-market-card" data-tags="photo professional modern">
+						<div class="template-sheet variant-c with-photo"></div>
+						<div class="template-card-footer">
+							<h3>Astral</h3>
+							<p>Modern profile-first design with a photo-ready sidebar.</p>
+							<div class="dot-palette">
+								<span style="--dot:#d8d0c5"></span><span style="--dot:#bdb4a8"></span><span style="--dot:#9f8b72"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Data Focus</h3>
-							<p>Built for analysts with impact-first bullet sections.</p>
+					<article class="template-market-card" data-tags="simple professional">
+						<div class="template-sheet variant-d"></div>
+						<div class="template-card-footer">
+							<h3>Eclipse</h3>
+							<p>Classic professional flow with calm section spacing.</p>
+							<div class="dot-palette">
+								<span style="--dot:#1c2435"></span><span style="--dot:#425978"></span><span style="--dot:#a7c2dc"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
-							<div class="preview-line mid"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Startup Sprint</h3>
-							<p>Compact one-page format for fast-moving teams.</p>
+					<article class="template-market-card" data-tags="modern twocol">
+						<div class="template-sheet variant-e"></div>
+						<div class="template-card-footer">
+							<h3>Astralis</h3>
+							<p>A two-column grid with highlighted skills and badges.</p>
+							<div class="dot-palette">
+								<span style="--dot:#0f685a"></span><span style="--dot:#1fa689"></span><span style="--dot:#b9f2dd"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Career Shift</h3>
-							<p>Highlights transferable skills with clarity.</p>
+					<article class="template-market-card" data-tags="twocol ats professional">
+						<div class="template-sheet variant-f"></div>
+						<div class="template-card-footer">
+							<h3>Orbit</h3>
+							<p>Balanced two-column format for long-form experience.</p>
+							<div class="dot-palette">
+								<span style="--dot:#f0f1f3"></span><span style="--dot:#cdd2d8"></span><span style="--dot:#8f97a0"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Academic Pro</h3>
-							<p>Detailed sections for research and publications.</p>
+					<article class="template-market-card" data-tags="modern professional">
+						<div class="template-sheet variant-g"></div>
+						<div class="template-card-footer">
+							<h3>Comet</h3>
+							<p>Warm accent header with impact-focused bullet density.</p>
+							<div class="dot-palette">
+								<span style="--dot:#2f3d56"></span><span style="--dot:#e8c547"></span><span style="--dot:#8fb8e5"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line short"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Marketing Glow</h3>
-							<p>Story-driven structure for brand and growth roles.</p>
+					<article class="template-market-card" data-tags="ats simple">
+						<div class="template-sheet variant-h"></div>
+						<div class="template-card-footer">
+							<h3>Solstice</h3>
+							<p>Neutral structure tuned for ATS and quick review.</p>
+							<div class="dot-palette">
+								<span style="--dot:#131925"></span><span style="--dot:#26518f"></span><span style="--dot:#6f95cf"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
-							<div class="preview-line mid"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Code Craft</h3>
-							<p>Built for developers with projects and stack callouts.</p>
+					<article class="template-market-card" data-tags="modern professional">
+						<div class="template-sheet variant-i"></div>
+						<div class="template-card-footer">
+							<h3>Pulsar</h3>
+							<p>Bold heading blocks and confident spacing for impact.</p>
+							<div class="dot-palette">
+								<span style="--dot:#dfe7c4"></span><span style="--dot:#c4dba4"></span><span style="--dot:#a3be73"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Finance Prime</h3>
-							<p>Professional split layout for finance profiles.</p>
+					<article class="template-market-card" data-tags="simple ats">
+						<div class="template-sheet variant-j"></div>
+						<div class="template-card-footer">
+							<h3>Quasar</h3>
+							<p>A crisp one-page format with familiar recruiter flow.</p>
+							<div class="dot-palette">
+								<span style="--dot:#2d2d2d"></span><span style="--dot:#535353"></span><span style="--dot:#a5a5a5"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-							<div class="preview-line short"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Minimal Air</h3>
-							<p>Spacious design focused on readability.</p>
+					<article class="template-market-card" data-tags="photo modern">
+						<div class="template-sheet variant-k with-photo"></div>
+						<div class="template-card-footer">
+							<h3>Nebular</h3>
+							<p>Photo-enhanced profile card with modern lines.</p>
+							<div class="dot-palette">
+								<span style="--dot:#f0f0f0"></span><span style="--dot:#d4d4d4"></span><span style="--dot:#9ea7b5"></span>
+							</div>
 						</div>
 					</article>
 
-					<article class="template-card">
-						<div class="template-preview">
-							<div class="preview-line title"></div>
-							<div class="preview-line short"></div>
-							<div class="preview-line"></div>
-							<div class="preview-line mid"></div>
-						</div>
-						<div class="template-meta">
-							<h3>Bold Impact</h3>
-							<p>Statement header and metrics-forward sections.</p>
+					<article class="template-market-card" data-tags="professional twocol">
+						<div class="template-sheet variant-l"></div>
+						<div class="template-card-footer">
+							<h3>Nova</h3>
+							<p>Polished professional style tuned for quick skim reading.</p>
+							<div class="dot-palette">
+								<span style="--dot:#d8dde6"></span><span style="--dot:#7f93b0"></span><span style="--dot:#3e4f6b"></span>
+							</div>
 						</div>
 					</article>
 				</section>
 			</main>
 		</div>
+		<script>
+			const filterChips = document.querySelectorAll(".filter-chip");
+			const templateCards = document.querySelectorAll(".template-market-card");
+
+			filterChips.forEach((chip) => {
+				chip.addEventListener("click", () => {
+					filterChips.forEach((node) => node.classList.remove("is-active"));
+					chip.classList.add("is-active");
+					const selected = chip.dataset.filter;
+
+					templateCards.forEach((card) => {
+						const tags = card.dataset.tags || "";
+						const visible = selected === "all" || tags.includes(selected);
+						card.style.display = visible ? "grid" : "none";
+					});
+				});
+			});
+		</script>
 	</body>
 </html>
