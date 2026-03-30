@@ -348,6 +348,37 @@
 				sheet.innerHTML = resumePreviewMarkup;
 			});
 
+			const fitPreviewText = (preview) => {
+				if (!preview || preview.offsetParent === null) return;
+
+				let low = 4.8;
+				let high = 9.2;
+				let best = 6.6;
+
+				for (let i = 0; i < 12; i += 1) {
+					const mid = (low + high) / 2;
+					preview.style.setProperty("--preview-size", `${mid}px`);
+
+					if (preview.scrollHeight > preview.clientHeight) {
+						high = mid;
+					} else {
+						best = mid;
+						low = mid;
+					}
+				}
+
+				preview.style.setProperty("--preview-size", `${best.toFixed(2)}px`);
+			};
+
+			const fitAllPreviews = () => {
+				document.querySelectorAll(".classic-preview").forEach((preview) => {
+					fitPreviewText(preview);
+				});
+			};
+
+			fitAllPreviews();
+			window.addEventListener("resize", fitAllPreviews);
+
 			const filterChips = document.querySelectorAll(".filter-chip");
 			const templateCards = document.querySelectorAll(".template-market-card");
 
@@ -362,6 +393,8 @@
 						const visible = selected === "all" || tags.includes(selected);
 						card.style.display = visible ? "grid" : "none";
 					});
+
+					fitAllPreviews();
 				});
 			});
 		</script>
