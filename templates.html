@@ -12,7 +12,7 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
+	<body class="templates-page">
 		<div class="page">
 			<header class="site-header">
 				<div class="brand">
@@ -30,24 +30,24 @@
 					</div>
 				</div>
 				<nav class="site-nav">
-					<button class="btn btn-ghost" onclick="window.location.href='index.html'">
-						Back to Home
-					</button>
+					<button class="btn btn-ghost" onclick="window.location.href='index.html'">Back to Home</button>
 				</nav>
 			</header>
 
 			<main class="templates-main">
-				<section class="templates-steps" aria-label="Resume setup steps">
-					<div class="step-pill active">
-						<span class="step-index">1</span>
+				<section class="templates-steps templates-steps-line" aria-label="Resume setup steps">
+					<div class="flow-step active">
+						<span class="flow-dot"></span>
 						<span>Choose template</span>
 					</div>
-					<div class="step-pill">
-						<span class="step-index">2</span>
+					<div class="flow-separator"></div>
+					<div class="flow-step">
+						<span class="flow-dot"></span>
 						<span>Enter your details</span>
 					</div>
-					<div class="step-pill">
-						<span class="step-index">3</span>
+					<div class="flow-separator"></div>
+					<div class="flow-step">
+						<span class="flow-dot"></span>
 						<span>Download resume</span>
 					</div>
 				</section>
@@ -56,8 +56,8 @@
 					<p class="templates-overline">Resume templates</p>
 					<h1>Resume templates</h1>
 					<p>
-						Simple to use and ready in minutes. Browse category styles and pick your
-						favorite design.
+						Simple to use and ready in minutes. Browse templates by category and choose
+						a style that fits your role.
 					</p>
 				</section>
 
@@ -206,10 +206,134 @@
 							</div>
 						</div>
 					</article>
+
+					<article class="template-market-card" data-tags="modern professional">
+						<div class="template-sheet variant-j"></div>
+						<div class="template-card-footer">
+							<h3>Aurora</h3>
+							<p>A light, elegant style with neat section separators.</p>
+							<div class="dot-palette">
+								<span style="--dot:#f0e8ef"></span><span style="--dot:#d9c1d4"></span><span style="--dot:#a6789c"></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="template-market-card" data-tags="simple ats">
+						<div class="template-sheet variant-b"></div>
+						<div class="template-card-footer">
+							<h3>Hyperion</h3>
+							<p>Formal one-page layout with strong visual hierarchy.</p>
+							<div class="dot-palette">
+								<span style="--dot:#232934"></span><span style="--dot:#556779"></span><span style="--dot:#8fb2c4"></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="template-market-card" data-tags="professional twocol">
+						<div class="template-sheet variant-f"></div>
+						<div class="template-card-footer">
+							<h3>Lunar</h3>
+							<p>Wide side panel for profile and contact details.</p>
+							<div class="dot-palette">
+								<span style="--dot:#d7dde2"></span><span style="--dot:#b2c3ce"></span><span style="--dot:#8a9aa8"></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="template-market-card" data-tags="simple professional">
+						<div class="template-sheet variant-d"></div>
+						<div class="template-card-footer">
+							<h3>Stellar</h3>
+							<p>Refined spacing and conservative section rhythm.</p>
+							<div class="dot-palette">
+								<span style="--dot:#e8edf2"></span><span style="--dot:#9ab2c7"></span><span style="--dot:#597896"></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="template-market-card" data-tags="modern twocol">
+						<div class="template-sheet variant-i"></div>
+						<div class="template-card-footer">
+							<h3>Zenith</h3>
+							<p>Contemporary two-column layout with highlighted headers.</p>
+							<div class="dot-palette">
+								<span style="--dot:#d4e2bf"></span><span style="--dot:#a9bf82"></span><span style="--dot:#728c4c"></span>
+							</div>
+						</div>
+					</article>
+
+					<article class="template-market-card" data-tags="photo professional">
+						<div class="template-sheet variant-k with-photo"></div>
+						<div class="template-card-footer">
+							<h3>Aether</h3>
+							<p>Photo-ready professional format with clean proportions.</p>
+							<div class="dot-palette">
+								<span style="--dot:#e3d7d7"></span><span style="--dot:#bd9a9a"></span><span style="--dot:#886b6b"></span>
+							</div>
+						</div>
+					</article>
 				</section>
+
+				<section class="templates-pagination" aria-label="Template pagination dots">
+					<span class="page-dot active"></span>
+					<span class="page-dot"></span>
+					<span class="page-dot"></span>
+				</section>
+
+				<footer class="templates-footer">
+					<p>© 2026 SkillCV Holdings Limited. All rights reserved.</p>
+					<div class="footer-links">
+						<a href="#">Terms and Conditions</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Cookie Policy</a>
+						<a href="#">Contact us</a>
+					</div>
+				</footer>
 			</main>
 		</div>
 		<script>
+			const resumePreviewMarkup = `
+				<div class="classic-preview">
+					<p class="r-role">IT MANAGER</p>
+					<h4 class="r-name">TRAVIS WILLIS</h4>
+					<p class="r-contact">200 FORT HILL RD, SCARSDALE, UNITED STATES, NY 10583 | (914) 479-6342 | WILLIS77@GMAIL.COM</p>
+					<div class="r-rule"></div>
+					<div class="r-section">
+						<p class="r-heading">SUMMARY</p>
+						<p class="r-copy">Experienced and professional IT Manager with over eight years of experience in monitoring project performance and ensuring company success.</p>
+					</div>
+					<div class="r-section split">
+						<p class="r-heading">SKILLS</p>
+						<div class="r-columns">
+							<ul>
+								<li>Project Management</li>
+								<li>Change Management</li>
+							</ul>
+							<ul>
+								<li>IT Support</li>
+								<li>Business Transformation</li>
+							</ul>
+						</div>
+					</div>
+					<div class="r-section">
+						<p class="r-heading">EXPERIENCE</p>
+						<p class="r-job">IT Manager | Phylo Biometrics Inc. | New York</p>
+						<ul class="r-bullets">
+							<li>Created business requirements and quality assurance specifications.</li>
+							<li>Increased customer satisfaction through process improvements.</li>
+						</ul>
+					</div>
+					<div class="r-section">
+						<p class="r-heading">EDUCATION</p>
+						<p class="r-copy">Master: Computer Science</p>
+					</div>
+				</div>
+			`;
+
+			document.querySelectorAll(".template-sheet").forEach((sheet) => {
+				sheet.innerHTML = resumePreviewMarkup;
+			});
+
 			const filterChips = document.querySelectorAll(".filter-chip");
 			const templateCards = document.querySelectorAll(".template-market-card");
 
